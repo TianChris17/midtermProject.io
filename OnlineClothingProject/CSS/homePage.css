@@ -1,0 +1,314 @@
+:root{
+    font-size: 62.5%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.6rem;
+
+    width: 100%;
+}
+/*----------------------------------------*/
+
+.header-container{
+
+    width: 100%;
+
+    padding: 1rem 2rem 1rem;
+
+    position: fixed;
+    top: 0%;
+
+    background-color: #586e6e;
+
+    color: white;
+}
+.header-container > .header-class{
+
+    display: flex;
+    width: 100%;
+}
+.header-class > .brand-container{
+
+    flex: 1;
+
+}
+.brand-container > h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.header-class > .nav-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+nav > a{
+
+    text-decoration: none;
+    margin-right: 15px;
+    cursor: pointer;
+
+    color: white;
+}
+a:hover{
+    color: #ffbc05;
+}
+@media (max-width: 1050px){
+    body{
+        max-width: 1050px;
+    }
+    .header-container{
+        max-width: 1050px;
+    }
+    .header-class > .header-class{
+
+        max-width: 1050px;
+    }
+}
+
+
+/*-------------Content section ----------------------------------*/
+
+.content-container{
+
+    display: flex;
+
+    width: 100%;
+    min-height: 100vh;
+
+    margin-top: 5%;
+
+    padding: 1rem 2rem 1rem;
+
+    background-color: #fafafa;
+
+}
+.content-container > img{
+
+    width: auto;
+    height: 650px;
+
+    margin-top: 5%;
+    margin-left: 3%;
+
+    border-radius: 15px;
+
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.content-container .content-description > h2{
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.5rem;
+
+}
+.content-container .content-description h2 > span{
+
+    border-left: 2px solid red;
+
+    margin-right: 2%;
+}
+.content-container > .content-description{
+
+    width: 800px;
+    height: 50vh;
+
+    margin-top: 7%;
+    margin-left: 3%;
+
+    padding: 1rem 2rem 1rem;
+}
+.content-description > p{
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.9;
+    text-align: justify;
+
+    font-size: 1.8rem;
+
+    margin-top: 2%;
+}
+
+/*----------------footer section -----------------*/
+.footer-container{
+
+    width: 100%;
+    min-height: 25vh;
+
+    background-color: #586e6e;
+    color: white;
+
+    margin-top: 5%;
+
+}
+.footer-container > footer{
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: "box1 box2 box3 box4";
+
+    padding: 2rem 4rem 2rem;
+
+    column-gap: 50px;
+}
+.footer-container footer > .address-section{
+
+    grid-area: box1;
+}
+.footer-container footer .address-section > h3{
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.footer-container footer .address-section > p{
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 1.5rem;
+}
+
+.footer-container footer > .email-section{
+    
+    grid-area: box2;
+}
+
+.footer-container footer .email-section > h3{
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.footer-container footer .email-section > p{
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 1.5rem;
+}
+
+.footer-container footer > .telephone-section{
+    
+    grid-area: box3;
+}
+.footer-container footer .telephone-section > h3{
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.footer-container footer .telephone-section > p{
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 1.5rem;
+}
+
+.footer-container footer > .socmed-container{
+    
+    grid-area: box4;
+
+    display: flex;
+
+    padding: 2rem 4rem 2rem;
+
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-container  > .copyright-container{
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    text-align: center;
+}
+
+/*-----------------1920x1080---------------*/
+
+@media (min-width: 1500px){
+
+    .header-container .header-class .brand-container > h1{
+
+        font-size: 5.0rem;
+    }
+    .header-container .header-class .nav-container nav > a{
+
+        font-size: 2.5rem;
+    }
+    .content-container > img{
+
+        width: auto;
+        height: 900px;
+    }
+    .content-container > .content-description{
+
+        width: 100%;
+    }
+    .content-container .content-description > h2{
+
+        font-size: 3.1rem;
+    }
+    .content-container .content-description > p{
+
+        font-size: 2.5rem;
+    }
+    .footer-container footer .address-section > h3{
+
+        font-size: 3.0rem;
+    }
+    .footer-container footer .address-section > p{
+
+        font-size: 2.0rem;
+    }
+    .footer-container footer .email-section > h3{
+
+        font-size: 3.0rem;
+    }
+    .footer-container footer .email-section > p{
+
+        font-size: 2.0rem;
+    }
+    .footer-container footer .telephone-section > h3{
+
+        font-size: 3.0rem;
+    }
+    .footer-container footer .telephone-section > p{
+
+        font-size: 2.0rem;
+    }
+    .footer-container > .copyright-container{
+
+        font-size: 2.7rem;
+    }
+    .footer-container footer .socmed-container > img{
+
+        width: 60px;
+        height: auto;
+    }
+    .footer-container{
+
+        margin-top: 0;
+    }
+}
